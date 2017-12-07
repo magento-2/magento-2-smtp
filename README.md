@@ -1,261 +1,135 @@
-# Magento 2 SMTP Extension - Configure Email Settings for Magento 2
+# Magento 2 SMTP Extension: Gmail, Amazon SES, Mailchimp, Sendinblue, Mandrill, Zoho mail, Mailgun, Outlook 
 
-Every day you send and receive so many even more hundreds of emails, however, you actually do not know whether they come to your targeted customers or not. Therefore, **Magento 2 SMTP Extension** is come out as the solution for this problem.
+Have you ever wondered why sometimes, if you have to send an email to address@example.com with your Gmail account, you send it to the smtp.gmail.com server; but then this server will send your message to the MX server of example.com, as a result, the mail is marked as a spam? That’s about time to learn more about SMTP to look back this.
 
-**SMTP Extension for Magento 2** helps the owner of store simply install **SMTP (Simple Mail Transfer Protocol)** server which transmits the messages into codes or numbers. Through it, messages will be delivered directly and automatically to the chosen customers. Moreover, it is also flexible configurations with 21 different *SMTP servers* such as `Gmail, Hotmail, O2 Mail, Office365, Mail.com, Send In Blue, AOL Mail Orange, GMX, Outlook, Yahoo, Comcast, or Custom SMTP` - own SMTP server, etc. 
-
-[![Latest Stable Version](https://poser.pugx.org/mageplaza/module-smtp/v/stable)](https://packagist.org/packages/mageplaza/module-smtp)
-
-![smtp configuration](https://i.imgur.com/VnCM6SB.png)
-
-
-## 1. Documentation
-
-- Installation guide: https://www.mageplaza.com/install-magento-2-extension/
-- User guide: https://www.mageplaza.com/magento-2-smtp/user-guide.html
-- Download from our Live site: https://www.mageplaza.com/magento-2-smtp/
-- Contribute on Github: https://github.com/mageplaza/magento-2-smtp
-- Get Support: https://github.com/mageplaza/magento-2-smtp/issues
-
-## 2. How to install SMTP Extension
-
-### Install via composer (recommend)
-
-Run the following command in Magento 2 root folder:
+### Install via composer
 
 ```
 composer require mageplaza/module-smtp
-php bin/magento setup:upgrade
-php bin/magento setup:static-content:deploy
 ```
-
-
-
-
-
-## 3. Highlight features:
-
-### Flexible Configurations
-
-It is easy for the store owner to reset the data or the information of any attributes with many options. Depending on your purposes, Mails will be configured simply and much faster.
-
-### SMTP Debug mode
-
-Before the emails are sent, they will be tested by running the test email from this extension to be sure that emails exact content is sent to desired customers. If there is any mistake, the emails will be logged them to correct the errors but we are not necessary to recheck all the settings.
-Moreover, by this **Debug mode**, owners can manage, preview or review the time the email created. You are also able to delete the logging or it can be done automatically after a period of time.
-
-### Email logging
-
-All the emails sent out from your store will be kept in this log on **Magento 2 SMTP extension**. The Admin totally can recheck the content of the email and it was sent to whom. Furthermore, you also check the time sent and the current status whether it is pending, in process or failed in the list. Especially, you can clear the log of the mail like the debug mode, manually or let it be after a certain time.
-
-### Test email
-
-This feature allows admin test the **SMTP settings** and make sure it works for current store.
-
-## Full features of the SMTP Extension for Magento 2
-
-- Use Your Own SMTP Server 
-- Sending the test emails before sending officially
-- Ensure all emails will be sent to desired customers 
-- Email logging with detailed view of every letter
-- Delete email log manually
-- Debug mode by SMTP email settings to test
-- Supports flexible servers
-- Check and preview sent emails
-
-
-
-## 4. SWEET MAGEPLAZA EXTENSIONS TO BRING YOU MORE MONEY
-
-### [✓ One Step Checkout](https://www.mageplaza.com/magento-2-one-step-checkout-extension/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ ↑30% INCREASE CONVERSION RATE 
-
-☞ ↓66% DECREASE ABANDONMENT CART
-
-☞ ↓80% REDUCE CHECKOUT TIME
-
-### [✓ Layered Navigation](https://www.mageplaza.com/magento-2-layered-navigation-extension/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ ↑84% USER'S FILTERING EXPERIENCE
-
-☞ ↑25% CONVERSION RATE
-
-☞ ↓67% SHOPPING TIME
-
-### [✓ Frequently Bought Together](https://www.mageplaza.com/magento-2-frequently-bought-together/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ Amazon Product Recommendation Solution
- 
-☞ AJAX loading for better performance
-
-☞ Support Custom Options and all product types
-
-
-
-### [✓ Gift Card](https://www.mageplaza.com/magento-2-gift-card-extension/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ Physical, virtual or combined gift cards
- 
-☞ Different gift card values from prices
-
-☞ Send cards via email, SMS, post office or messenger
-
-
-### [✓ Who Bought This Also Bought](https://www.mageplaza.com/magento-2-who-bought-this-also-bought/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ Display on Product Page, Category Page, Shopping Cart page
-
-☞ AJAX loading for better performance.
-
-☞ Flexible layout and design.
-
-
-### [✓ Social Login](https://www.mageplaza.com/magento-2-social-login-extension/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ Increase signup rate up-to 30%
-
-☞ Supports 11 Types: Facebook, Google Plus, Twitter, Linkedin, Instagram, Yahoo, Github, Foursquare, VK, Live, Amazon
-
-☞ Easy custom design fit with your store design
-
-☞ [Social Login on Github](https://github.com/mageplaza/magento-2-social-login)
-
-
-
-### [✓ Shop By Brand](https://www.mageplaza.com/magento-2-shop-by-brand/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ Fully Compatible with Layered Navigation
-
-☞ Instant Search brands
-
-☞ Import brands
-
-
-
-
-### [✓ Affiliate](https://www.mageplaza.com/magento-2-affiliate-extension/?utm_source=github.com&utm_medium=link&utm_campaign=related-extension)
-
-☞ Multiple Affiliate Campaigns
-
-☞ Smart Referral Links
-
-☞ Affiliate Report
-
-
-
-## 6. User Guide
-
-
-In Magento 2, default email server of inherent hosting will be used to send unregistered emails, which means the reputation for this email is pretty low and they will be rated as untrustworthy content, as a matter of fact your precious emails will be delivered to spamming box without knocking up any notification to receiver. Imagine how enormous detriment your business is having when you couldn’t properly send such Order Confirmation, Invoice, Shipment Information,... to their inbox, but classified as spam trash and this is not a professional management.
-
-**Mageplaza SMTP** will assist you to resolve this issue. By available popular email server providers, our extension absolutely would like to help you in sending email with a huge amount of quantity, faster along with high secure authentication. Hence, Mageplaza SMTP will also provide you a log diary which archive all the detail sent emails, makes it easier to keep track and checking problems. Be ready to say goodbye to Spam box issue.
-
-
-Here we go how to know detail in instructions and configuration in extension’s backend.
-
-### How to config
-
-#### 1. Email logs
-
-This can be accessed by the following  `Mageplaza > SMTP > Email Logs`. From here you can look back all the sent email from the server to customers.
-
-![Email logs](https://i.imgur.com/k5KfDLL.png)
-
-By clicking View in each mail, you can have a general looking at the display which how your email will reach customer’s eyes.
-Hit the Clear red button to clear all the archived emails after checking carefully.
-
-![order](https://i.imgur.com/5eos9R7.png)
-
-#### 2. Configuration
-
-##### 2.2.1 General Configuration
-
-Be sure you’re at Admin Panel, for general configuration `Mageplaza > SMTP > Configuration > General Configuration`
-
-Choose Yes to enable Mageplaza SMTP on.
-
-![SMTP on](http://i.imgur.com/4jN9BIx.png)
-
-##### 2.2.2 SMTP Configuration Options
-Still from the same structure with General Configuration, scroll down to see  SMTP Configuration Options
 
 ![smtp configuration](https://i.imgur.com/VnCM6SB.png)
 
-- In SMTP Provider field, at the moment we support provider nearly 30 SMTP email service providers so feel free to choose your appropriate provider. Click Auto Fill button to fill Host, Port, Authentication and  Protocol automatically, which are compatible with the SMTP provider you had chosen. 
 
+## Magento 2 SMTP by Mageplaza
+Mageplaza SMTP, which is well compatible with Magento 2’s platform scale, will assist you to resolve email sending issues. By available popular email server providers, our extension absolutely would like to support you with them in sending email with a huge amount of quanlity, faster speed along with high secure authentication. Hence, Mageplaza SMTP will also provide you a log diary which archive all the detail sent emails, makes it easier to keep track and checking problems. Be ready to say goodbye to Spam box issues.
+
+### Support 20+ SMTP service providers
+Not only your own custom SMTP server, but also Mageplaza STMP extension supports the customization from available email service providers, like:
+
+- Mailgun
+- Mandrill
+- SendinBlue
+- SendGrid
+- Elastic Email
+- SparkPost
+- Mailjet
+- Gmail
+- Amazon SES
+- Hotmail
+- Office365
+- Outlook
+- Zoho Mail
+- Mail.com
+- Postmark
+- AOL Mail
+- Comcast
+- GMX
+- O2 Mail
+- Orange
+- Yahoo Mail
+- Yahoo Mail Plus
+- Yahoo AU/NZ
+- AT&T
+- NTL @ntlworld.com
+- BT Connect
+- Verizon
+- BT Openworld
+- O2 Online Deutschland
+- Custom SMTP
+
+
+
+
+### Autofill button
+The first ever start in configuring a SMTP server, is choosing your particular pre-defined email vendor you’re partner with. Then the Autofill button will take the second step that when you click it, Authentication and Protocol fields will be entered automatically with figures being valid with the SMTP provider you chose. This incredible function won’t fail to make you amazed by the cut off consuming time in typing section. 
+
+### Self-testing email function
+This function will allow you to manually check your email sending, with the defined SMTP providers, inputted Protocol and Host, to claim if your marketing mails can be sent to the correct Inbox.
+
+Just a small note that with the testing email you’re choosing, especially with Gmail+ provider, a separate tutorial How to configure Gmail SMTP in Magento 2 conducted to adapt massive Gmail users in question how exactly they can manage to command Gmail+ server properly. The important key is, you should turn POP/IMAP to be enabled in the testing gmail account setting. For other email providers, the configuration will be similar.
+
+### Archiving sent emails
+Poses as a cautiously function, all the sent email will be stored in a separated module from Configuration faculty, let you have an overview list about a sent mail status, creating day and its  particular preview.
+
+Email logs can be scheduled to be cleaned after a customizable day(s) 
+
+
+## How to config
+Here we go how to know detail in instructions and configuration in extension’s backend.
+
+### Email logs
+This can be accessed by the following Mageplaza > SMTP > Email Logs. From here you can look back all the sent email from the server to customers.
+Email logs
+By clicking View in each mail, you can have a general looking at the display which how your email will reach customer’s eyes. Hit the Clear red button to clear all the archived emails after checking carefully.
+Order
+
+### Configuration
+#### General Configuration
+Be sure you’re at Admin Panel, for general configuration Mageplaza > SMTP > Configuration > General Configuration
+
+Choose Yes to enable Mageplaza SMTP on.
+
+#### SMTP Configuration Options
+Still from the same structure with SMTP General Configuration, scroll down to see SMTP Configuration Options
+
+- In SMTP Provider field, at the moment we support provider nearly 30 SMTP email service providers so feel free to choose your appropriate provider. Click Auto Fill button to fill Host, Port, Authentication and Protocol automatically, which are compatible with the SMTP provider you had chosen.
 - At Host field, type your Support Host name and ID Address. You can also custom STMP Provider’s Host name at here. If you had clicked Auto fill button at the above field, you can give this step a free pass.
-
 - Port is a specific gate where emails will be sent through. You can also pass this step if you had choose Auto fill from the first place. In general, there will be 3 kinds of Default Port
-
-	- Port 25: Emails sent by other Protocol which different SSL will be sent through this portal
-	- Port 465: Emails sent by other Protocol SSL will be sent through this portal
-	- Port 578: Emails sent by other Protocol TLS will be sent through this portal
-
-- Authentication field is place where  you decide an authentication method. If you hadn’t clicked Auto fill button before, please note those basic methods
-	- Login: Authentication by login to the account through Username and Password that will be filled in the next field. Most of provider will require this method.
-	- Plain
-	- CRAM-MD5
+- Port 25: Emails sent by other Protocol which different SSL will be sent through this portal
+- Port 465: Emails sent by other Protocol SSL will be sent through this portal
+- Port 578: Emails sent by other Protocol TLS will be sent through this portal
+- Authentication field is place where you decide an authentication method. If you hadn’t clicked Auto fill button before, please note those basic methods
+- Login: Authentication by login to the account through Username and Password that will be filled in the next field. Most of provider will require this method.
+- Plain
+- CRAM-MD5
 - Account: where you enter the account name matching format of the SMTP Provider you had selected
-- Password: password of the Username. After saving, the password will be encrypted into ******
+- Password: password of the Username. After saving, the password will be encrypted into **
 - Protocol: pass this step if you had chosen Auto fill, or you can select one of the providing protocol below here
-	- None: when you select this protocol, you have to accept all the risk may occur in the process of sending.
-	- SSL stands for Secure Socket Layer. This protocol ensures that all data exchanged between the web server and the browser is secure and stay safe.
-	- TLS means Transport Layer Security. This protocol secures data or messages and validates the integrity of messages through message authentication codes.
+- None: when you select this protocol, you have to accept all the risk may occur in the process of sending.
+- SSL stands for Secure Socket Layer. This protocol ensures that all data exchanged between the web server and the browser is secure and stay safe.
+- TLS means Transport Layer Security. This protocol secures data or messages and validates the integrity of messages through message authentication codes.
 - Return-path email: leave it empty if you want to ignore this.
 - Test email recipient: This is the field for you to test the operation of the extension. After filling all fields, click Test Now button. If the information entered is valid, a successful email notification will be sent from Username to Email Test. That email will have the following content:
+smtp test result
 
-![smtp test result](https://i.imgur.com/D0cw3ta.png)
-
-
-##### 2.2.3 Schedule Log Cleaner
-
+#### Schedule Log Cleaner
 This section is placed right under SMTP Configuration Options, which is from Admin Panel > Mageplaza > SMTP > Configuration > scroll down and expand to see Schedule Log Cleaner
-
-![smtp cleaner](https://i.imgur.com/lK28kKF.png)
-
+smtp cleaner
 The Clean Email Log Every field limits the storage time for the email you sent. After that limited number of days, Email will automatically delete. If you do not want to delete the emails, leave the field blank.
 
+#### Developer mode
+Log Email will supply two modes:
+- Yes: Sent emails will be saved in the Emails Log, you can preview it and having it clean up follow fixed schedule.
+- No: Sent emails won’t be archived.
 
-#### 2.2.4 Developer 
-
-- Log Email will supply two modes:
-	- Yes: Sent emails will be saved in the Emails Log, you can preview it and having it clean up follow fixed schedule.
-	- No: Sent emails won’t be archived.
-
-- Developer Mode:
-	- Yes: Magento will not deliver any email to receiver
-	- No: Magento will deliver email to receiver
+**Developer Mode:**
+- Yes: Magento will not deliver any email to receiver
+- No: Magento will deliver email to receiver
 
 
 
+Every email marketing moves need SMTP for their life. It’s the simplest form of email communicating; it’s the quickest way when comes to facilitate the internal technical transmission; it’s the most popular method in sending out electronic mail messages across networks that run on IP or the Internet Protocol; it’s the best choice thanks to the amazing flexibility that it can be well fitable with every e-commerce platform, such as great Magento.
 
+According to Hmailserver: “SMTP stands for Simple Mail Transfer Protocol. SMTP is used when email is delivered from an email client, such as Outlook Express, to an email server or when email is delivered from one email server to another”.
 
+Fundamentally, there are some highlight points what make SMTP become sought after by email marketing runners:
 
+- The simplicity: Instead of requiring you to check (POP) your emails before being sent out through native servers, SMTP authentication accepts you to simply deliver them safely and the redundant check section will be remove conveniently.
+- The advance: If you are expecting an intermediate solution which can manage to send unlimited emails successfully; email list will be hidden as well as you still can have full control; the most saving efficient? Definitely learning how to configure SMTP your server will be a good practice to rock your business.
+- The reliability: It will possess as a hard-working man, always try to re-send the same email until the process can be done. Cut down the time-consuming steps is one of a notable strength of SMTP that is truly welcomed by developers as well as marketers. They don’t have to be involved in all-around minor works but gravity toward the email content effectively.   
 
-## Mageplaza extensions on Magento Marketplace, Github
+With its simple but very effective features, SMTP continues to become the most widely used messaging standard. Common steps such as modifying existing messages by adding a custom header to set the campaign for different message streams, or enabling the tracking of the opening or clicking tend to be significantly less complex than starting to use the API.
 
-
-☞ [Magento 2 One Step Checkout extension](https://marketplace.magento.com/mageplaza-magento-2-one-step-checkout-extension.html)
-
-☞ [Magento 2 SEO Module](https://marketplace.magento.com/mageplaza-magento-2-seo-extension.html)
-
-☞ [Magento 2 Blog extension](https://marketplace.magento.com/mageplaza-magento-2-blog-extension.html)
-
-☞ [Magento 2 Layered Navigation extension](https://marketplace.magento.com/mageplaza-layered-navigation-m2.html)
-
-☞ [Magento One Step Checkout](https://github.com/magento-2/one-step-checkout)
-
-☞ [Magento 2 Blog on Github](https://github.com/mageplaza/magento-2-blog)
-
-☞ [Magento 2 Social Login on Github](https://github.com/mageplaza/magento-2-social-login)
-
-☞ [Magento 2 SEO on Github](https://github.com/mageplaza/magento-2-seo)
-
-☞ [Magento 2 SMTP on Github](https://github.com/mageplaza/magento-2-smtp)
-
-☞ [Magento 2 Product Slider on Github](https://github.com/mageplaza/magento-2-product-slider)
-
-☞ [Magento 2 Banner on Github](https://github.com/mageplaza/magento-2-banner-slider)
-
+This troubleshoot still presents in Magento 2’s store when store owners use the default SMTP server of Magento, to launch their email marketing in these recent years. How to configure an available email provider SMTP is a thing, but how we can do that in a complicated platform with a limit of your budget and time? We’re really please to introduce another expert solution for Magento 2’s store
 
