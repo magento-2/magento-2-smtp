@@ -11,7 +11,7 @@ composer require mageplaza/module-smtp
 ![smtp configuration](https://i.imgur.com/VnCM6SB.png)
 
 
-## Magento 2 SMTP by Mageplaza
+## [Magento 2 SMTP by Mageplaza](https://www.mageplaza.com/magento-2-smtp/)
 Mageplaza SMTP, which is well compatible with Magento 2’s platform scale, will assist you to resolve email sending issues. By available popular email server providers, our extension absolutely would like to support you with them in sending email with a huge amount of quanlity, faster speed along with high secure authentication. Hence, Mageplaza SMTP will also provide you a log diary which archive all the detail sent emails, makes it easier to keep track and checking problems. Be ready to say goodbye to Spam box issues.
 
 ### Support 20+ SMTP service providers
