@@ -1,4 +1,4 @@
-# Magento 2 SMTP Extension: Gmail, Amazon SES, Mailchimp, Sendinblue, Mandrill, Zoho mail, Mailgun, Outlook 
+# SMTP Extension for Magento 2 - FREE SMTP module
 
 Have you ever wondered why sometimes, if you have to send an email to address@example.com with your Gmail account, you send it to the smtp.gmail.com server; but then this server will send your message to the MX server of example.com, as a result, the mail is marked as a spam? That’s about time to learn more about SMTP to look back this.
 
@@ -11,8 +11,8 @@ composer require mageplaza/module-smtp
 ![smtp configuration](https://i.imgur.com/VnCM6SB.png)
 
 
-## [Magento 2 SMTP by Mageplaza](https://www.mageplaza.com/magento-2-smtp/)
-Mageplaza SMTP, which is well compatible with Magento 2’s platform scale, will assist you to resolve email sending issues. By available popular email server providers, our extension absolutely would like to support you with them in sending email with a huge amount of quanlity, faster speed along with high secure authentication. Hence, Mageplaza SMTP will also provide you a log diary which archive all the detail sent emails, makes it easier to keep track and checking problems. Be ready to say goodbye to Spam box issues.
+## Magento 2 SMTP Extension
+SMTP module for Magento 2, which is well compatible with Magento 2’s platform scale, will assist you to resolve email sending issues. By available popular email server providers, our extension absolutely would like to support you with them in sending email with a huge amount of quanlity, faster speed along with high secure authentication. Hence, Mageplaza SMTP will also provide you a log diary which archive all the detail sent emails, makes it easier to keep track and checking problems. Be ready to say goodbye to Spam box issues.
 
 ### Support 20+ SMTP service providers
 Not only your own custom SMTP server, but also Mageplaza STMP extension supports the customization from available email service providers, like:
@@ -49,9 +49,7 @@ Not only your own custom SMTP server, but also Mageplaza STMP extension supports
 - Custom SMTP
 
 
-
-
-### Autofill button
+### Autofill SMTP configuration button
 The first ever start in configuring a SMTP server, is choosing your particular pre-defined email vendor you’re partner with. Then the Autofill button will take the second step that when you click it, Authentication and Protocol fields will be entered automatically with figures being valid with the SMTP provider you chose. This incredible function won’t fail to make you amazed by the cut off consuming time in typing section. 
 
 ### Self-testing email function
@@ -59,13 +57,13 @@ This function will allow you to manually check your email sending, with the defi
 
 Just a small note that with the testing email you’re choosing, especially with Gmail+ provider, a separate tutorial How to configure Gmail SMTP in Magento 2 conducted to adapt massive Gmail users in question how exactly they can manage to command Gmail+ server properly. The important key is, you should turn POP/IMAP to be enabled in the testing gmail account setting. For other email providers, the configuration will be similar.
 
-### Archiving sent emails
+### Logging sent emails
 Poses as a cautiously function, all the sent email will be stored in a separated module from Configuration faculty, let you have an overview list about a sent mail status, creating day and its  particular preview.
 
 Email logs can be scheduled to be cleaned after a customizable day(s) 
 
 
-## How to config
+## How to configure
 Here we go how to know detail in instructions and configuration in extension’s backend.
 
 ### Email logs
@@ -119,9 +117,7 @@ Log Email will supply two modes:
 
 
 
-Every email marketing moves need SMTP for their life. It’s the simplest form of email communicating; it’s the quickest way when comes to facilitate the internal technical transmission; it’s the most popular method in sending out electronic mail messages across networks that run on IP or the Internet Protocol; it’s the best choice thanks to the amazing flexibility that it can be well fitable with every e-commerce platform, such as great Magento.
-
-According to Hmailserver: “SMTP stands for Simple Mail Transfer Protocol. SMTP is used when email is delivered from an email client, such as Outlook Express, to an email server or when email is delivered from one email server to another”.
+Every email marketing moves need *SMTP* for their life. It’s the simplest form of email communicating; it’s the quickest way when comes to facilitate the internal technical transmission; it’s the most popular method in sending out electronic mail messages across networks that run on IP or the Internet Protocol; it’s the best choice thanks to the amazing flexibility that it can be well fitable with every e-commerce platform, such as great Magento.
 
 Fundamentally, there are some highlight points what make SMTP become sought after by email marketing runners:
 
